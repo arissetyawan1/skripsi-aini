@@ -1,7 +1,10 @@
 	<!-- Content -->
 
 	<div class="container">
-		<div class="row mt-3 fadeInUp animated">
+		<p>
+			Hello World
+		</p>
+		<!-- <div class="row mt-3 fadeInUp animated">
 			<div class="col-md-8 mb-3">
 				<div class="card border-dark">
 					<div class="card-header bg-dark text-light text-center font-weight-bold"><i class="fas fa-fw fa-calculator"></i> APLIKASI PREDIKSI PENJUALAN DENGAN MONTE CARLO</div>
@@ -162,5 +165,5 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
