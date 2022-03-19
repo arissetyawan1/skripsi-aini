@@ -16,14 +16,17 @@ class Dashboard extends CI_Controller{
         $this->load->view('templates/header', $menu);
         $this->load->view('templates/nav_menu');
         $this->load->view('templates/side_bar', $menu);
+        $this->load->view($menu['views'].'/'. $menu['name'], $menu);
         $this->load->view('templates/footer');
     }
 
     public function index()
     {
-        
-        $this->template(['Dashboard']);
+        $datas['views'] = 'dashboard';
+        $datas['name'] ='index';
+        $this->template($datas);
     }
+
 }
 
 ?>

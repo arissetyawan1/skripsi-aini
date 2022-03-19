@@ -6,9 +6,9 @@
 				<div class="nav">
 						<!-- menu admin pusat section -->
 						<div class="sb-sidenav-menu-heading">Daftar Menu Admin Pusat</div>
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="<?= base_url('barang') ?>">
 							<div class="sb-nav-link-icon "><i class="fa fa-tasks" aria-hidden="true"></i></div>
-							Menu Penyuratan
+							Daftar Barang
 						</a>
 						<a class="nav-link" href="#">
 							<div class="sb-nav-link-icon">
