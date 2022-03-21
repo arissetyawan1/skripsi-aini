@@ -12,7 +12,7 @@ class Dashboard extends CI_Controller{
     public function template($menu)
     
     {
-		$menu["title"] = "Dashboard";
+		$menu["title"] = "Beranda";
         $this->load->view('templates/header', $menu);
         $this->load->view('templates/nav_menu');
         $this->load->view('templates/side_bar', $menu);
