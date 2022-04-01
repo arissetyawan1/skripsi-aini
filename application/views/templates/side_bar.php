@@ -8,13 +8,7 @@
 						<div class="sb-sidenav-menu-heading">Menu Kelola Barang</div>
 						<a class="nav-link" href="<?= base_url('barang') ?>">
 							<div class="sb-nav-link-icon "><i class="fa fa-tasks" aria-hidden="true"></i></div>
-							Daftar Barang
-						</a>
-						<a class="nav-link" href="<?= base_url('penjualan') ?>">
-							<div class="sb-nav-link-icon">
-								<i class="fa fa-check" aria-hidden="true"></i>
-							</div>
-							Data Penjualan
+							Permintaan
 						</a>
 						<a class="nav-link" href="<?= base_url('laporan') ?>">
 							<div class="sb-nav-link-icon">

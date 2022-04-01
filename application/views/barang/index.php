@@ -1,12 +1,12 @@
-		<!-- side content -->
+<!-- side content -->
 		<div id="layoutSidenav_content" class="content-menu">
 			<main>
 				<div class="container-fluid px-4">
-					<h3 class="mt-4">Daftar Barang</h3>
+					<h3 class="mt-4">Permintaan</h3>
 					<p>test</p>
 					<div class="card">
 					<div class="card-header">
-					<button type="button" class="btn btn-primary">Tambah Barang</button>
+					<a href="<?=base_url();?>barang/tambah" class="btn btn-primary">Tambah Data</a>
 					</div>
 					<div class="card-body">
 					<div class="row d-flex flex-row-reverse">
@@ -24,27 +24,28 @@
 								<tr>
 									<td class="text-center"><strong>No.</td></strong>
 									<td class="text-center"><strong>Nama Barang</td></strong>
-									<td class="text-center"><strong>Jenis Barang</td></strong>
-									<td class="text-center"><strong>Satuan</td></strong>
-									<td class="text-center"><strong>Harga Jual</td></strong>
-									<td class="text-center"><strong>Jumlah Stok</td></strong>
+									<td class="text-center"><strong>Periode</td></strong>
+									<td class="text-center"><strong>Jumlah Permintaan</td></strong>
+									<td class="text-center"><strong>Jumlah Prediksi</td></strong>
 									<td class="text-center"><strong>Aksi</td></strong>
 								</tr>
 							</thread>
 							<tbody>
+								<?php foreach ($barang as $brg) : ?>
 								<tr>
-									<td>a</td>
-									<td>a</td>
-									<td>a</td>
-									<td>a</td>
-									<td>a</td>
-									<td>a</td>
+									<td><?= $brg['id_barang'];?></td>
+									<td><?= $brg['barang']; ?></td>
+									<td><?= $brg['periode']; ?></td>
+									<td><?= $brg['total_permintaan']; ?></td>
+									<td><?= $brg['prediksi_permintaan']; ?></td>
+
 									<td class="text-center">
 									<button type="button" class="btn btn-info">Detil</button>
 									<button type="button" class="btn btn-warning">Ubah</button>
 									<button type="button" class="btn btn-danger">Hapus</button>
 									</td>
 								</tr>
+								<?php endforeach; ?>
 							</tbody>
 						</table>
 					</div>

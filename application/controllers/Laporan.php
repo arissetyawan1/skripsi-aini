@@ -18,7 +18,7 @@ class Laporan extends Dashboard
 	{
 		$data['judul']='Laporan barang';
 		$this->load->view('templates/header', $data);
-		$this->load->view('barang/index');
+		$this->load->view('laporan/index');
 		$this->load->view('templates/footer');
 	}
 }
