@@ -6,7 +6,7 @@
 					<p>test</p>
 					<div class="card">
 					<div class="card-header">
-						<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</button>
+						<a href="<?=base_url();?>barang/index" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Tambah Data</a>
 					</div>
 					<div class="card-body">
 					<div class="row d-flex flex-row-reverse">
@@ -23,7 +23,7 @@
 							<thread>
 								<tr>
 									<td class="text-center"><strong>No.</td></strong>
-									<td class="text-center"><strong>Nama Barang</td></strong>
+
 									<td class="text-center"><strong>Periode</td></strong>
 									<td class="text-center"><strong>Jumlah Permintaan</td></strong>
 									<td class="text-center"><strong>Jumlah Prediksi</td></strong>
@@ -33,8 +33,8 @@
 							<tbody>
 								<?php foreach ($barang as $brg) : ?>
 								<tr>
-									<td><?= $brg['id_barang'];?></td>
-									<td><?= $brg['barang']; ?></td>
+									<td class="text-center"><?= $brg['id_barang'];?></td>
+
 									<td><?= $brg['periode']; ?></td>
 									<td><?= $brg['total_permintaan']; ?></td>
 									<td><?= $brg['prediksi_permintaan']; ?></td>
@@ -58,17 +58,33 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Form Tambah Data</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					Ini bisa Kok
-				</div>
+					<?php if(validation_errors()) : ?>
+						<div class="alert alert-danger" role="alert">
+							<?=validation_errors();?>
+						</div>
+						<?php endif; ?>
+						<form action="<?= base_url("barang/tambahData"); ?>" method="post">
+							<div class="row">
+								<div class="col">
+									<label for="periode">Periode</label>
+									<input type="date" name="periode" class="form-control" id="periode">
+								</div>
+								<div class="col">
+									<label for="total_permintaan">Jumlah Permintaan</label>
+									<input type="number" name="total_permintaan" class="form-control" id="total_permintaan">
+								</div>
+							</div>
+						</form>
+					</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+					<button type="submit" name="tambah" class="btn btn-primary">Simpan</button>
 				</div>
 				</div>
 			</div>

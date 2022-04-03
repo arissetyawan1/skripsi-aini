@@ -23,17 +23,28 @@ class Barang extends Dashboard
 
 	}
 
-	public function tambah()
+	public function tambahData()
 	{
+		$periode = $this->input->post('periode', true);
+		$total_permintaan = $this->input->post('total_permintaan', true);
+
+		$data = array(
+			'periode' => $periode,
+			'total_permintaan' => $total_permintaan
+		);
+		$this->BarangModels->tambahData($data);
+		$this->session->set_flashdata('flashMessage', 'Data berhail ditambahkan!');
+		redirect('home');
+
 		$data['views'] = $this->default;
 		$data['name'] = 'tambah';
-		$this->form_validation->set_rules('nama', 'Nama Barang', 'required');
-		if($this->form_validation->run() == FALSE)
-		{
-			$this->template($data);
-		} else {
-			echo 'betul!';
-		}
+		// $this->form_validation->set_rules('permintaan', 'Permintaan', 'required|numeric');
+		// if($this->form_validation->run() == FALSE)
+		// {
+		// 	$this->template($data);
+		// } else {
+
+		// }
 	}
 
 }

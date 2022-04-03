@@ -7,4 +7,9 @@ class BarangModels extends CI_Model{
        $query = $this->db->get('permintaan');
        return $query->result_array();
     }
+
+    public function tambahData($data)
+    {
+        $this->db->insert('permintaan', $data);
+    }
 }
