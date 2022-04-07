@@ -76,6 +76,7 @@ class Front_Controller extends CI_Controller {
 			$frek9 = $this->input->post('fr9');
 			$frek10 = $this->input->post('fr10');
 
+			// hitung total frekuensi =12
 			$total = $frek1+$frek2+$frek3+$frek4+$frek5+$frek6+$frek7+$frek8+$frek9+$frek10;
 
 			$proba['pr1'] = number_format($frek1/$total,2);
@@ -86,7 +87,7 @@ class Front_Controller extends CI_Controller {
 			$proba['pr6']= number_format($frek6/$total,2);
 			$proba['pr7']= number_format($frek7/$total,2);
 			$proba['pr8']= number_format($frek8/$total,2);
-			$proba['pr9']= number_format($frek8/$total,2);
+			$proba['pr9']= number_format($frek9/$total,2);
 			$proba['pr10']= number_format($frek10/$total,2);
 
 			$a = 0;
@@ -108,11 +109,11 @@ class Front_Controller extends CI_Controller {
 			$proba['pk7'] = number_format($g+$frek7/$total,2);
 			$proba['pk8'] = number_format($h+$frek8/$total,2);
 			$proba['pk9'] = number_format($i+$frek9/$total,2);
-			$proba['pk10'] = number_format($i+$frek10/$total,2);
+			$proba['pk10'] = number_format($j+$frek10/$total,2);
 
-			$pkm1 = number_format($i+$frek10/$total,2,'','.');
+			$pkm1 = number_format($j+$frek10/$total,2,'','.');
 			$total1 = number_format($pkm1);
-
+			//  set proba acak a = 5, b =7, m=99, i = 1.
 			$proba['acak1'] = number_format(rand(0,$total1));
 			$proba['acak2'] = number_format(rand(0,$total1));
 			$proba['acak3'] = number_format(rand(0,$total1));
@@ -124,6 +125,7 @@ class Front_Controller extends CI_Controller {
 			$proba['acak9'] = number_format(rand(0,$total1));
 			$proba['acak10'] = number_format(rand(0,$total1));
 
+			$proba['bla'] = $total1;
 			$this->load->view('front/templates/header', $data);
 			$this->load->view('front/hasil', $proba, $data);
 			$this->load->view('front/templates/footer', $data);
