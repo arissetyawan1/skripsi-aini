@@ -113,19 +113,33 @@ class Front_Controller extends CI_Controller {
 
 			$pkm1 = number_format($j+$frek10/$total,2,'','.');
 			$total1 = number_format($pkm1);
-			//  set proba acak a = 5, b =7, m=99, i = 1.
-			$proba['acak1'] = number_format(rand(0,$total1));
-			$proba['acak2'] = number_format(rand(0,$total1));
-			$proba['acak3'] = number_format(rand(0,$total1));
-			$proba['acak4'] = number_format(rand(0,$total1));
-			$proba['acak5'] = number_format(rand(0,$total1));
-			$proba['acak6'] = number_format(rand(0,$total1));
-			$proba['acak7'] = number_format(rand(0,$total1));
-			$proba['acak8'] = number_format(rand(0,$total1));
-			$proba['acak9'] = number_format(rand(0,$total1));
-			$proba['acak10'] = number_format(rand(0,$total1));
+			//  set proba acak a = 5, b =7, m=99, i = 1. n = 11
+			$n = 11;
+			$a = 5;
+			$b = 7;
+			
+			// $proba['acak1'] = number_format(rand(0,$total1));
+			// $proba['acak2'] = number_format(rand(0,$total1));
+			// $proba['acak3'] = number_format(rand(0,$total1));
+			// $proba['acak4'] = number_format(rand(0,$total1));
+			// $proba['acak5'] = number_format(rand(0,$total1));
+			// $proba['acak6'] = number_format(rand(0,$total1));
+			// $proba['acak7'] = number_format(rand(0,$total1));
+			// $proba['acak8'] = number_format(rand(0,$total1));
+			// $proba['acak9'] = number_format(rand(0,$total1));
+			// $proba['acak10'] = number_format(rand(0,$total1));
+			$proba['acak1'] = ($a * $n + $b) % 99;
+			$proba['acak2'] =  ($a * $proba['acak1'] + $b) % 99;
+			$proba['acak3'] = ($a * $proba['acak2'] + $b) % 99;
+			$proba['acak4'] = ($a * $proba['acak3'] + $b) % 99;
+			$proba['acak5'] = ($a * $proba['acak4'] + $b) % 99;
+			$proba['acak6'] = ($a * $proba['acak5'] + $b) % 99;
+			$proba['acak7'] = ($a * $proba['acak6'] + $b) % 99;
+			$proba['acak8'] = ($a * $proba['acak7'] + $b) % 99;
+			$proba['acak9'] = ($a * $proba['acak8'] + $b) % 99;
+			$proba['acak10'] = ($a * $proba['acak9'] + $b) % 99;
 
-			$proba['bla'] = $total1;
+			// $proba['bla'] = $total1;
 			$this->load->view('front/templates/header', $data);
 			$this->load->view('front/hasil', $proba, $data);
 			$this->load->view('front/templates/footer', $data);

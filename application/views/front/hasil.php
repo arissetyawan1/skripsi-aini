@@ -176,9 +176,9 @@
 						<div class="form-group">
 							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $acak10; ?>" disabled>
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $bla; ?>" disabled>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
