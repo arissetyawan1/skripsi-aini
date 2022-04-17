@@ -11,38 +11,39 @@
 				<div class="alert alert-danger">
 					<strong>Perhatian!!!</strong> Bandingkan <strong>Angka Acak</strong> dengan <strong>Interval</strong> ,kemudian jika sudah ditemukan. maka lihat <strong>Data Permintaan</strong> dan sesuaikan dengan Data Interval yang sudah <strong>Ditemukan</strong> tadi. Selanjutnya <strong>Jumlah Semua Data Permintaan</strong> yang sudah ditemukan tadi kemudian di bagi dengan <strong>Jumlah Permintaan Terbanyak.</strong>
 				</div>
+				<form action="<?= base_url("Front_Controller/tambah"); ?>" method="post">
 				<div class="row justify-content-center">
 					<div class="col-md-2">
 						<div class="alert alert-success tada animated mt-2"><i class="fas fa-fw fa-info-circle"></i> Permintaan</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per1'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan[]" value="<?= $this->input->post('per1'); ?>" readOnly>
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per2'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan[]" value="<?= $this->input->post('per2'); ?>">
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per3'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan[]" value="<?= $this->input->post('per3'); ?>">
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per4'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan[]" value="<?= $this->input->post('per4'); ?>">
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per5'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan" value="<?= $this->input->post('per5'); ?>" disabled>
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per6'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan" value="<?= $this->input->post('per6'); ?>" disabled>
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per7'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan" value="<?= $this->input->post('per7'); ?>" disabled>
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per8'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan" value="<?= $this->input->post('per8'); ?>" disabled>
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per9'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan" value="<?= $this->input->post('per9'); ?>" disabled>
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="pd1" value="<?= $this->input->post('per10'); ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Permintaan1" name="total_permintaan" value="<?= $this->input->post('per10'); ?>" disabled>
 						</div>
 					</div>
 					<div class="col-md-3">
@@ -146,17 +147,20 @@
 					</div>
 					<div class="col-md-2">
 						<div class="alert alert-success tada animated mt-2"><i class="fas fa-fw fa-info-circle"></i> Angka Acak</div>
+						 <!-- <?php foreach ($angka_acak as $item => $value):?>
+							<li><?php echo $item = $value;?></li>
+						<?php endforeach;?> -->
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $acak1; ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="angka_acak[]" value="<?= $acak1; ?>" >
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $acak2; ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="angka_acak[]" value="<?= $acak2; ?>" >
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $acak3; ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="angka_acak[]" value="<?= $acak3; ?>" >
 						</div>
 						<div class="form-group">
-							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $acak4; ?>" disabled>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="angka_acak[]" value="<?= $acak4; ?>" >
 						</div>
 						<div class="form-group">
 							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $acak5; ?>" disabled>
@@ -180,8 +184,29 @@
 							<input class="form-control" id="disabledInput" type="text" placeholder="Angak Acak 1" name="pd1" value="<?= $bla; ?>" disabled>
 						</div> -->
 					</div>
+					<div class="row justify-content-center mt-3">
+								<div>
+									<button type="submit" class="btn btn-dark btn-lg mt-2 btn-block"><i class="fas fa-fw fa-calculator"></i> Simpan</button>
+								</div>
+							</div>
+				</form>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+      $("#datepicker").datepicker( {
+			format: " yyyy", // Notice the Extra space at the beginning
+			viewMode: "years", 
+			minViewMode: "years"
+		});
+	console.log($("#datepicker").val());
+    
+    $("#datepicker").on("change",function(){
+        var selected = $(this).val();
+        console.log(selected);
+		$(".year").val(selected);
+    });
+
+	</script>

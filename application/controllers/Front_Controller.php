@@ -5,6 +5,7 @@ class Front_Controller extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('PrediksiModels');
 		$this->load->library('form_validation');
 	}
 	public function tentang(){
@@ -132,7 +133,7 @@ class Front_Controller extends CI_Controller {
 			$proba['acak2'] =  ($a * $proba['acak1'] + $b) % 99;
 			$proba['acak3'] = ($a * $proba['acak2'] + $b) % 99;
 			$proba['acak4'] = ($a * $proba['acak3'] + $b) % 99;
-			$proba['acak5'] = ($a * $proba['acak4'] + $b) % 99;
+			$proba['acak5'] = ($a * $proba['acak4']+ $b) % 99;
 			$proba['acak6'] = ($a * $proba['acak5'] + $b) % 99;
 			$proba['acak7'] = ($a * $proba['acak6'] + $b) % 99;
 			$proba['acak8'] = ($a * $proba['acak7'] + $b) % 99;
@@ -140,10 +141,37 @@ class Front_Controller extends CI_Controller {
 			$proba['acak10'] = ($a * $proba['acak9'] + $b) % 99;
 
 			// $proba['bla'] = $total1;
+			$result['angka_acak']  = array($proba);
+			// var_dump($result['angka_acak']);
 			$this->load->view('front/templates/header', $data);
 			$this->load->view('front/hasil', $proba, $data);
 			$this->load->view('front/templates/footer', $data);
 		}
+	}
+
+	public function tambah()
+	{
+		// $periode = $this->input->post('total_permintaan', true);
+		$total_permintaan = $this->input->post('total_permintaan', true);
+		$angka_acak = $this->input->post('angka_acak', true);
+		$tahun = $this->input->post('tahun', true);
+
+		// $data = array(
+		// 	'periode' => $periode,
+		// 	'total_permintaan' => $total_permintaan
+		// );
+		$index = 0;
+		$data = array();   
+			foreach($total_permintaan as $k){
+			array_push($data, array(
+			'total_permintaan'=>$k,
+			'angka_acak' => $angka_acak[$index],
+			'tahun' => $tahun[$index]
+			));
+				
+			$index++;
+		}
+		$this->PrediksiModels->tambahData($data);
 	}
 
 }
