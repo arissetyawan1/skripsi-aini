@@ -114,9 +114,9 @@ class Front_Controller extends CI_Controller {
 
 			$pkm1 = number_format($j+$frek10/$total,2,'','.');
 			$total1 = number_format($pkm1);
-			//  set proba acak a = 5, b =7, m=99, i = 1. n = 11
+			//  set proba acak a = 4, b =7, m=99, i = 1. n = 11
 			$n = 11;
-			$a = 5;
+			$a = 4;
 			$b = 7;
 			
 			// $proba['acak1'] = number_format(rand(0,$total1));

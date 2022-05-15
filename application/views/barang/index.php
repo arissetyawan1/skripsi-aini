@@ -242,6 +242,12 @@
 								<div class="form-group mb-2">
 									<input class="form-control" id="acak10" type="text" placeholder="Bil  Acak 1" name="angka_acak[]" class="acak"" >
 								</div>
+								<div class="form-group mb-2">
+									<input class="form-control" id="acak11" type="text" placeholder="Bil  Acak 1" name="angka_acak[]" class="acak"" >
+								</div>
+								<div class="form-group mb-2">
+									<input class="form-control" id="acak12" type="text" placeholder="Bil  Acak 1" name="angka_acak[]" class="acak"" >
+								</div>
 							</div>
 							<div class="col">
 								<div class="form-group mb-2">
@@ -273,6 +279,12 @@
 								</div>
 								<div class="form-group mb-2">
 									<input class="form-control" id="prediksi10" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak"" >
+								</div>
+								<div class="form-group mb-2">
+									<input class="form-control" id="prediksi11" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak"" >
+								</div>
+								<div class="form-group mb-2">
+									<input class="form-control" id="prediksi12" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak"" >
 								</div>
 							</div>
 						</div>
@@ -344,7 +356,7 @@
 					$("#kumulatif8").val((pk8+frek8/count_frek).toFixed(2));
 					$("#kumulatif9").val((pk9+frek9/count_frek).toFixed(2));
 					$("#kumulatif10").val((pk10+frek10/count_frek).toFixed(2));
-					$("#interval1").val(`0 - ${pk1+frek1/count_frek}`);
+					$("#interval1").val(`0 - ${(pk1+frek1/count_frek).toFixed(2)}`);
 					$("#interval2").val(`${(pk1+frek1/count_frek).toFixed(2) + 0.01} -  ${(pk2+frek2/count_frek).toFixed(2)}`);
 					$("#interval3").val(`${(pk2+frek2/count_frek).toFixed(2) + 0.01} -  ${(pk3+frek3/count_frek).toFixed(2)}`);
 					$("#interval4").val(`${(pk3+frek3/count_frek).toFixed(2) + 0.01} -  ${(pk4+frek4/count_frek).toFixed(2)}`);
@@ -356,8 +368,8 @@
 					$("#interval10").val(`${(pk9+frek9/count_frek).toFixed(2) + 0.01} -  ${(pk10+frek10/count_frek).toFixed(2)}`);
 
 					// auto angka acak
-					let n = 11, a =5 , b =7 , mod = 99;
-					let acak1, acak2, acak3, acak4, acak5, acak6, acak7, acak8, acak9, acak10;
+					let n = 11, a =4 , b =7 , mod = 99;
+					let acak1, acak2, acak3, acak4, acak5, acak6, acak7, acak8, acak9, acak10, acak11, acak12;
 					acak1 =((a * n + b ) % mod).toFixed(2);
 					acak2 =((a * acak1 + b ) % mod).toFixed(2);
 					acak3 =((a * acak2 + b ) % mod).toFixed(2);
@@ -368,6 +380,8 @@
 					acak8 =((a * acak7 + b ) % mod).toFixed(2);
 					acak9 =((a * acak8 + b ) % mod).toFixed(2);
 					acak10 =((a * acak9 + b ) % mod).toFixed(2);
+					acak11 =((a * acak10 + b ) % mod).toFixed(2);
+					acak12 =((a * acak11 + b ) % mod).toFixed(2);
 					$("#acak1").val(acak1);
 					$("#acak2").val(acak2);
 					$("#acak3").val(acak3);
@@ -378,6 +392,8 @@
 					$("#acak8").val(acak8);
 					$("#acak9").val(acak9);
 					$("#acak10").val(acak10);
+					$("#acak11").val(acak11);
+					$("#acak12").val(acak12);
 
 					console.log(d1.toFixed(2));
 			})
