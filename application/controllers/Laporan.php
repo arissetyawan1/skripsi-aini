@@ -18,7 +18,7 @@ class Laporan extends Dashboard
 		$data['views'] = $this->default;
 		$data['name'] = 'index';
 		$data['total'] = $this->PrediksiModels->getAll();
-		var_dump($data['total']);
+		// var_dump($data['total']);
 		$this->template($data);
 
 	}

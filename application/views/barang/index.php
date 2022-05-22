@@ -64,6 +64,16 @@
 									<input type="text" name="total_permintaan[]"id="permintaan10"  placeholder="Permintaan 10" class="form-control">
 									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
 								</div>
+								<div class="form-group mb-2">
+									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="total_permintaan[]"id="permintaan11"  placeholder="Permintaan 11" class="form-control">
+									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
+								</div>
+								<div class="form-group mb-2">
+									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="total_permintaan[]"id="permintaan12"  placeholder="Permintaan 12" class="form-control">
+									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
+								</div>
 							</div>
 							<div class="col">
 								<div class="form-group mb-2">
