@@ -116,6 +116,14 @@
 									<input type="text" name="fr10" placeholder="Frekuensi 10" id="frekuensi10" class="form-control">
 									<?= form_error('fr10','<small class="text-danger">','</small>'); ?>
 								</div>
+								<div class="form-group mb-2">
+									<input type="text" name="fr10" placeholder="Frekuensi 11" id="frekuensi11" class="form-control">
+									<?= form_error('fr10','<small class="text-danger">','</small>'); ?>
+								</div>
+								<div class="form-group mb-2">
+									<input type="text" name="fr10" placeholder="Frekuensi 12" id="frekuensi12" class="form-control">
+									<?= form_error('fr10','<small class="text-danger">','</small>'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -152,6 +160,12 @@
 								<div class="form-group mb-2">
 										<input type="text" name="per7" id="distribusi10" placeholder="Distribusi 2" class="form-control">
 									</div>	
+								<div class="form-group mb-2">
+										<input type="text" name="per7" id="distribusi11" placeholder="Distribusi 2" class="form-control">
+									</div>	
+								<div class="form-group mb-2">
+										<input type="text" name="per7" id="distribusi12" placeholder="Distribusi 2" class="form-control">
+									</div>	
 								</div>
 							<div class="col">
 								<div class="form-group mb-2">
@@ -183,6 +197,12 @@
 								</div>
 								<div class="form-group mb-2">
 									<input class="form-control" id="kumulatif10" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
+								</div>
+								<div class="form-group mb-2">
+									<input class="form-control" id="kumulatif11" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
+								</div>
+								<div class="form-group mb-2">
+									<input class="form-control" id="kumulatif112" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
 								</div>
 							</div>
 						</div>
@@ -219,6 +239,12 @@
 									</div>
 								<div class="form-group mb-2">
 										<input type="text" name="per7" id="interval10" placeholder="Interval 2" class="form-control">
+									</div>	
+								<div class="form-group mb-2">
+										<input type="text" name="per7" id="interval11" placeholder="Interval 2" class="form-control">
+									</div>	
+								<div class="form-group mb-2">
+										<input type="text" name="per7" id="interval12" placeholder="Interval 2" class="form-control">
 									</div>	
 								</div>
 							<div class="col-md-2">
@@ -344,7 +370,9 @@
 					var frek8 =parseInt($("#frekuensi8").val());
 					var frek9 = parseInt($("#frekuensi9").val());
 					var frek10 =parseInt($("#frekuensi10").val());
-					count_frek = frek1+frek2+frek3+frek4+frek5+frek6+frek7+frek8+frek9+frek10;
+					var frek11 =parseInt($("#frekuensi11").val());
+					var frek12 =parseInt($("#frekuensi12").val());
+					count_frek = frek1+frek2+frek3+frek4+frek5+frek6+frek7+frek8+frek9+frek10+frek11+frek12;
 					$("#distribusi1").val((frek1/count_frek).toFixed(2));
 					$("#distribusi2").val((frek2/count_frek).toFixed(2));
 					$("#distribusi3").val((frek3/count_frek).toFixed(2));
@@ -355,7 +383,9 @@
 					$("#distribusi8").val((frek8/count_frek).toFixed(2));
 					$("#distribusi9").val((frek9/count_frek).toFixed(2));
 					$("#distribusi10").val((frek10/count_frek).toFixed(2));
-					let pk1, pk2, pk3, pk4, pk5, pk6, pk7, pk8, pk9, pk10;
+					$("#distribusi11").val((frek11/count_frek).toFixed(2));
+					$("#distribusi12").val((frek12/count_frek).toFixed(2));
+					let pk1, pk2, pk3, pk4, pk5, pk6, pk7, pk8, pk9, pk10, pk11, pk12;
 					pk1 = 0;
 					pk2 = pk1+frek1/count_frek;
 					pk3 = pk2+frek2/count_frek;
@@ -366,6 +396,8 @@
 					pk8 = pk7+frek7/count_frek;
 					pk9 = pk8+frek8/count_frek;
 					pk10 = pk9+frek9/count_frek;
+					pk11 = pk10+frek10/count_frek;
+					pk12 = pk11+frek11/count_frek;
 					$("#kumulatif1").val((pk1+frek1/count_frek).toFixed(2));
 					$("#kumulatif2").val((pk2+frek2/count_frek).toFixed(2));
 					$("#kumulatif3").val((pk3+frek3/count_frek).toFixed(2));
@@ -376,6 +408,8 @@
 					$("#kumulatif8").val((pk8+frek8/count_frek).toFixed(2));
 					$("#kumulatif9").val((pk9+frek9/count_frek).toFixed(2));
 					$("#kumulatif10").val((pk10+frek10/count_frek).toFixed(2));
+					$("#kumulatif11").val((pk11+frek11/count_frek).toFixed(2));
+					$("#kumulatif12").val((pk11+frek11/count_frek).toFixed(2));
 					$("#interval1").val(`0 - ${(pk1+frek1/count_frek).toFixed(2)}`);
 					$("#interval2").val(`${((pk1+frek1/count_frek) + 0.01).toFixed(2)} -  ${(pk2+frek2/count_frek).toFixed(2)}`);
 					$("#interval3").val(`${((pk2+frek2/count_frek) + 0.01).toFixed(2)} -  ${(pk3+frek3/count_frek).toFixed(2)}`);
@@ -386,6 +420,8 @@
 					$("#interval8").val(`${((pk7+frek7/count_frek) + 0.01).toFixed(2)} -  ${(pk8+frek8/count_frek).toFixed(2)}`);
 					$("#interval9").val(`${((pk8+frek8/count_frek) + 0.01).toFixed(2)} -  ${(pk9+frek9/count_frek).toFixed(2)}`);
 					$("#interval10").val(`${((pk9+frek9/count_frek) + 0.01).toFixed(2)} -  ${(pk10+frek10/count_frek).toFixed(2)}`);
+					$("#interval11").val(`${((pk10+frek10/count_frek) + 0.01).toFixed(2)} -  ${(pk11+frek11/count_frek).toFixed(2)}`);
+					$("#interval12").val(`${((pk11+frek11/count_frek) + 0.01).toFixed(2)} -  ${(pk12+frek12/count_frek).toFixed(2)}`);
 						let intvl1=parseInt($("#interval1").val());
 						let intvl2=parseInt($("#interval2").val());
 						let intvl3=parseInt($("#interval3").val());

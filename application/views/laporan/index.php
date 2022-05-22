@@ -37,13 +37,13 @@
 					labels: [<?= $angka_acak; ?>], // data tahun sebagai label dari chart
 					datasets: [{
 						label: 'Permintaan',
-						backgroundColor: ['rgb(255, 100, 132)', 'rgba(56, 86, 255, 0.87)', 'rgb(60, 179, 113)', 'rgb(175, 238, 239)'],
+						backgroundColor: ['rgb(255, 100, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)'],
 						borderColor: ['rgb(255, 99, 132)'],
 						data: [<?= $jumlah; ?>] //data siswa sebagai data dari chart
 					},
 					{
 						label: 'Prediksi',
-						backgroundColor: ['rgb(70, 99, 132)', 'rgba(56, 100, 55, 0.87)', 'rgb(100, 179, 55)', 'rgb(70, 238, 239)'],	
+						backgroundColor: ['rgb(70, 99, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)'],	
 						borderColor: ['rgb(70, 100, 132)'],
 						data: [<?= $prediksi; ?>] //data siswa sebagai data dari chart
 					}]
