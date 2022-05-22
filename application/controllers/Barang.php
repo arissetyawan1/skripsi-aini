@@ -27,10 +27,12 @@ class Barang extends Dashboard
 	{
 		$periode = $this->input->post('periode', true);
 		$total_permintaan = $this->input->post('total_permintaan', true);
+		$prediksi = $this->input->post('prediksi', true);
 
 		$data = array(
 			'periode' => $periode,
-			'total_permintaan' => $total_permintaan
+			'total_permintaan' => $total_permintaan,
+			'prediksi' => $prediksi,
 		);
 		$this->BarangModels->tambahData($data);
 		$this->session->set_flashdata('flashMessage', 'Data berhail ditambahkan!');

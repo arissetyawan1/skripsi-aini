@@ -153,6 +153,7 @@ class Front_Controller extends CI_Controller {
 	{
 		// $periode = $this->input->post('total_permintaan', true);
 		$total_permintaan = $this->input->post('total_permintaan', true);
+		$prediksi = $this->input->post('prediksi', true);
 		$angka_acak = $this->input->post('angka_acak', true);
 		$tahun = $this->input->post('tahun', true);
 
@@ -166,12 +167,14 @@ class Front_Controller extends CI_Controller {
 			array_push($data, array(
 			'total_permintaan'=>$k,
 			'angka_acak' => $angka_acak[$index],
-			'tahun' => $tahun[$index]
+			'tahun' => $tahun[$index],
+			'prediksi' => $prediksi[$index],
 			));
 				
 			$index++;
 		}
 		$this->PrediksiModels->tambahData($data);
+		redirect('Dashboard');
 	}
 
 }

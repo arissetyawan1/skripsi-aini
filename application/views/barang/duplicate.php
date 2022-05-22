@@ -251,40 +251,40 @@
 							</div>
 							<div class="col">
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi1" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi1" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi2" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi2" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi3" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi3" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi4" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi4" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi5" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi5" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi6" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi6" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi7" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi7" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi8" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi8" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi9" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak" >
+									<input class="form-control" id="prediksi9" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi10" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak"" >
+									<input class="form-control" id="prediksi10" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak"" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi11" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak"" >
+									<input class="form-control" id="prediksi11" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak"" >
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="prediksi12" type="text" placeholder="Prediksi Permintaan 1" name="prediksi[]" class="acak"" >
+									<input class="form-control" id="prediksi12" type="text" placeholder="Prediksi Permintaan 1" name="angka_acak[]" class="acak"" >
 								</div>
 							</div>
 						</div>
@@ -423,8 +423,8 @@
 					$("#prediksi8").val(barise);
 					$("#prediksi9").val(barisf);
 					$("#prediksi10").val(barisd);
-					$("#prediksi11").val(barise);
-					$("#prediksi12").val(barish);
+					$("#prediksi11").val(acak11);
+					$("#prediksi12").val(acak12);
 
 			})
 		</script>

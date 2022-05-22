@@ -14,9 +14,12 @@
 								$nama_jurusan= "";
 								$jumlah=null;
 								$angka_acak=null;
+								$prediksi = null;
 								foreach ($total as $item)
 								{
 									$dataJumlah     = $item['total_permintaan'];
+									$dataPrediksi = $item['prediksi'];
+									$prediksi .="'$dataPrediksi'".","; 
 									$jumlah .= "'$dataJumlah'".",";
 									$data_angka_acak = $item['bulan'];
 									$angka_acak .= "'$data_angka_acak'".",";
@@ -33,10 +36,16 @@
 				data: {
 					labels: [<?= $angka_acak; ?>], // data tahun sebagai label dari chart
 					datasets: [{
-						label: 'Jumlah Peserta',
-						backgroundColor: ['rgb(255, 99, 132)', 'rgba(56, 86, 255, 0.87)', 'rgb(60, 179, 113)', 'rgb(175, 238, 239)'],
+						label: 'Permintaan',
+						backgroundColor: ['rgb(255, 100, 132)', 'rgba(56, 86, 255, 0.87)', 'rgb(60, 179, 113)', 'rgb(175, 238, 239)'],
 						borderColor: ['rgb(255, 99, 132)'],
 						data: [<?= $jumlah; ?>] //data siswa sebagai data dari chart
+					},
+					{
+						label: 'Prediksi',
+						backgroundColor: ['rgb(70, 99, 132)', 'rgba(56, 100, 55, 0.87)', 'rgb(100, 179, 55)', 'rgb(70, 238, 239)'],	
+						borderColor: ['rgb(70, 100, 132)'],
+						data: [<?= $prediksi; ?>] //data siswa sebagai data dari chart
 					}]
 				},
 				options: {

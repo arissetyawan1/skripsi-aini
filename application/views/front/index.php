@@ -312,6 +312,10 @@
 			</div>
 
 	<script type="text/javascript">
+		const frek=(a,b,c,d,e,f,g,h,i,j)=>{
+			let arr = [a,b,c,d,e,f,g,h,i,j]
+			return arr.map
+		}
       $("#datepicker").datepicker( {
 			format: " yyyy", // Notice the Extra space at the beginning
 			viewMode: "years", 
