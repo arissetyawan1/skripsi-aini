@@ -202,7 +202,7 @@
 									<input class="form-control" id="kumulatif11" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="kumulatif112" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
+									<input class="form-control" id="kumulatif12" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
 								</div>
 							</div>
 						</div>
@@ -360,6 +360,8 @@
 					let barish= parseInt($('#permintaan8').val());
 					let barisi= parseInt($('#permintaan9').val());
 					let barisj= parseInt($('#permintaan10').val());
+					let barisk= parseInt($('#permintaan11').val());
+					let barisl= parseInt($('#permintaan12').val());
 					var frek1 = parseInt($("#frekuensi1").val());
 					var frek2 =parseInt($("#frekuensi2").val());
 					var frek3 = parseInt($("#frekuensi3").val());
@@ -461,16 +463,16 @@
 					
 					$("#prediksi1").val(barisf);
 					$("#prediksi2").val(barisb);
-					$("#prediksi3").val(barisg);
-					$("#prediksi4").val(barise);
-					$("#prediksi5").val(barisi);
-					$("#prediksi6").val(barisg);
-					$("#prediksi7").val(barisf);
+					$("#prediksi3").val(barish);
+					$("#prediksi4").val(barisf);
+					$("#prediksi5").val(barisk);
+					$("#prediksi6").val(barish);
+					$("#prediksi7").val(barish);
 					$("#prediksi8").val(barise);
-					$("#prediksi9").val(barisf);
+					$("#prediksi9").val(barisg);
 					$("#prediksi10").val(barisd);
 					$("#prediksi11").val(barise);
-					$("#prediksi12").val(barish);
+					$("#prediksi12").val(barisi);
 
 			})
 		</script>
