@@ -202,7 +202,7 @@
 									<input class="form-control" id="kumulatif11" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
 								</div>
 								<div class="form-group mb-2">
-									<input class="form-control" id="kumulatif112" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
+									<input class="form-control" id="kumulatif12" type="text" placeholder="Kumulatif 1" name="pd1" class="pk"  disabled>
 								</div>
 							</div>
 						</div>

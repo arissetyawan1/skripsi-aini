@@ -7,7 +7,7 @@
 					</h1>
 					<div class="row mt-4">
 						<div class="col">
-							<span> Ini colom nder</span>
+							<!-- <span> Ini colom nder</span> -->
 							<canvas id="myChart"></canvas>
 							<?php
 								//Inisialisasi nilai variabel awal
