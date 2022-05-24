@@ -16,61 +16,73 @@
 							<div class="col-7">
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Januari" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan1" placeholder="Permintaan 1" class="form-control ">
 									<?= form_error('per1','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Februari" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan2" placeholder="Permintaan 2" class="form-control ">
 									<?= form_error('per2','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Maret" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan3" placeholder="Permintaan 3" class="form-control">
 									<?= form_error('per3','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="April" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan4" placeholder="Permintaan 4" class="form-control">
 									<?= form_error('per4','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Mei" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan5" placeholder="Permintaan 5" class="form-control">
 									<?= form_error('per5','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Juni" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan6" placeholder="Permintaan 6" class="form-control">
 									<?= form_error('per6','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="July" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan7" placeholder="Permintaan 7" class="form-control">
 									<?= form_error('per7','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Agustus" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan8" placeholder="Permintaan 8" class="form-control">
 									<?= form_error('per8','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="September" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan9" placeholder="Permintaan 9" class="form-control">
 									<?= form_error('per9','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Oktober" hidden>
 									<input type="text" name="total_permintaan[]"id="permintaan10"  placeholder="Permintaan 10" class="form-control">
 									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="November" hidden>
 									<input type="text" name="total_permintaan[]"id="permintaan11"  placeholder="Permintaan 11" class="form-control">
 									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
+									<input type="text" name="bulan[]" class="year" placeholder="permintaan 1" class="form-control"  value="Desember" hidden>
 									<input type="text" name="total_permintaan[]"id="permintaan12"  placeholder="Permintaan 12" class="form-control">
 									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
 								</div>
@@ -360,6 +372,8 @@
 					let barish= parseInt($('#permintaan8').val());
 					let barisi= parseInt($('#permintaan9').val());
 					let barisj= parseInt($('#permintaan10').val());
+					let barisk= parseInt($('#permintaan11').val());
+					let barisl= parseInt($('#permintaan12').val());
 					var frek1 = parseInt($("#frekuensi1").val());
 					var frek2 =parseInt($("#frekuensi2").val());
 					var frek3 = parseInt($("#frekuensi3").val());
@@ -461,16 +475,16 @@
 					
 					$("#prediksi1").val(barisf);
 					$("#prediksi2").val(barisb);
-					$("#prediksi3").val(barisg);
-					$("#prediksi4").val(barise);
-					$("#prediksi5").val(barisi);
-					$("#prediksi6").val(barisg);
-					$("#prediksi7").val(barisf);
+					$("#prediksi3").val(barish);
+					$("#prediksi4").val(barisf);
+					$("#prediksi5").val(barisk);
+					$("#prediksi6").val(barish);
+					$("#prediksi7").val(barish);
 					$("#prediksi8").val(barise);
-					$("#prediksi9").val(barisf);
+					$("#prediksi9").val(barisg);
 					$("#prediksi10").val(barisd);
 					$("#prediksi11").val(barise);
-					$("#prediksi12").val(barish);
+					$("#prediksi12").val(barisi);
 
 			})
 		</script>

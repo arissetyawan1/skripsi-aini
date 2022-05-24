@@ -155,6 +155,7 @@ class Front_Controller extends CI_Controller {
 		$total_permintaan = $this->input->post('total_permintaan', true);
 		$prediksi = $this->input->post('prediksi', true);
 		$angka_acak = $this->input->post('angka_acak', true);
+		$bulan = $this->input->post('bulan', true);
 		$tahun = $this->input->post('tahun', true);
 
 		// $data = array(
@@ -168,6 +169,7 @@ class Front_Controller extends CI_Controller {
 			'total_permintaan'=>$k,
 			'angka_acak' => $angka_acak[$index],
 			'tahun' => $tahun[$index],
+			'bulan' => $bulan[$index],
 			'prediksi' => $prediksi[$index],
 			));
 				
