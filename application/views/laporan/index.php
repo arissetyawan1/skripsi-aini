@@ -7,7 +7,7 @@
 					</h1>
 					<div class="row mt-4">
 						<div class="col">
-							<span> Ini colom nder</span>
+							<!-- <span> Ini colom nder</span> -->
 							<canvas id="myChart"></canvas>
 							<?php
 								//Inisialisasi nilai variabel awal
@@ -38,24 +38,23 @@
 					datasets: [{
 						label: 'Permintaan',
 						// backgroundColor: ['rgb(255, 100, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)'],
+						fill:false,
+						pointRadius: 7,
+    					pointBackgroundColor :'rgb(255, 99, 132)',
 						borderColor: ['rgb(255, 99, 132)'],
+						tension : 0,
 						data: [<?= $jumlah; ?>] //data siswa sebagai data dari chart
 					},
 					{
 						label: 'Prediksi',
-						// backgroundColor: ['rgb(70, 99, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)'],	
+						// backgroundColor: ['rgb(70, 99, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)'],
+						fill:false,
+						pointRadius: 7,
+    					pointBackgroundColor :'rgb(70, 100, 132)',
 						borderColor: ['rgb(70, 100, 132)'],
+						tension : 0,
 						data: [<?= $prediksi; ?>] //data siswa sebagai data dari chart
 					}]
 				},
-				options: {
-					scales: {
-						yAxes: [{
-							ticks: {
-								beginAtZero: true
-							}
-						}]
-					}
-				}
 			});
 		</script>
