@@ -32,30 +32,29 @@
 		<script>
 			const ctx = document.getElementById('myChart').getContext('2d');
 			 var chart = new Chart(ctx, {
-				type: 'bar',
+				type: 'line',
 				data: {
 					labels: [<?= $angka_acak; ?>], // data tahun sebagai label dari chart
 					datasets: [{
 						label: 'Permintaan',
-						backgroundColor: ['rgb(255, 100, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)'],
+						// backgroundColor: ['rgb(255, 100, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)', 'rgb(255, 99, 132)'],
+						fill:false,
+						pointRadius: 7,
+    					pointBackgroundColor :'rgb(255, 99, 132)',
 						borderColor: ['rgb(255, 99, 132)'],
+						tension : 0,
 						data: [<?= $jumlah; ?>] //data siswa sebagai data dari chart
 					},
 					{
 						label: 'Prediksi',
-						backgroundColor: ['rgb(70, 99, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)'],	
+						// backgroundColor: ['rgb(70, 99, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)', 'rgb(70, 100, 132)'],
+						fill:false,
+						pointRadius: 7,
+    					pointBackgroundColor :'rgb(70, 100, 132)',
 						borderColor: ['rgb(70, 100, 132)'],
+						tension : 0,
 						data: [<?= $prediksi; ?>] //data siswa sebagai data dari chart
 					}]
 				},
-				options: {
-					scales: {
-						yAxes: [{
-							ticks: {
-								beginAtZero: true
-							}
-						}]
-					}
-				}
 			});
 		</script>
