@@ -16,6 +16,7 @@
 							</div>
 						</div>
 					</form>
+					<?php if(!empty($total)){ ?>
 					<div class="row mt-4">
 						<div class="col">
 							<!-- <span> Ini colom nder</span> -->
@@ -34,10 +35,20 @@
 									$jumlah .= "'$dataJumlah'".",";
 									$data_angka_acak = $item['bulan'];
 									$angka_acak .= "'$data_angka_acak'".",";
-								}
-								?>
+								}?>
+							</div>
 						</div>
-					</div>
+					<?php 
+						}else{
+							?>
+							<div class="row mt-4">
+								<div class="col">
+									<b class="text-center"> Data Kosong</b>
+									<canvas id="myChart"></canvas>
+								</div>
+							</div>
+						<?php  
+						}?>
 				</div>
 			</main>
 		<script>

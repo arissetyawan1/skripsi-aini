@@ -7,12 +7,14 @@
 						<!-- menu admin pusat section -->
 						<div class="sb-sidenav-menu-heading">Menu Kelola Barang</div>
 						<a class="nav-link" href="<?= base_url('barang') ?>">
-							<div class="sb-nav-link-icon "><i class="fa fa-tasks" aria-hidden="true"></i></div>
+							<div class="sb-nav-link-icon ">
+								<!-- <i class="fa fa-tasks" aria-hidden="true"></i> -->
+							</div>
 							Permintaan
 						</a>
 						<a class="nav-link" href="<?= base_url('laporan') ?>">
 							<div class="sb-nav-link-icon">
-								<i class="fas fa-ban"></i>
+								<!-- <i class="fas fa-ban"></i> -->
 							</div>
 							Laporan Penjualan
 						</a>
