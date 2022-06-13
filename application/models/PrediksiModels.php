@@ -2,9 +2,9 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class PrediksiModels extends CI_Model{
-    public function getAll()
+    public function getAll($tahun)
     {
-       $query = $this->db->select("*")->from('prediksi')->where('prediksi.tahun', 2022)->get();
+       $query = $this->db->select("*")->from('prediksi')->where('prediksi.tahun', $tahun)->get();
        return $query->result_array();
     }
 
