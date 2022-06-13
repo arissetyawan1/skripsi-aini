@@ -5,6 +5,17 @@
 					<h1 class="mt-4">
 						Laporan Page
 					</h1>
+					<form method="post"  action="<?= base_url('Laporan/index'); ?>">
+						<div class="row my-1">
+							<div class="d-flex w-50">
+								<div class="input-group">
+									<label class ="mr-3"> Tahun </label>
+									<input type="text" id="datepicker" name="tahun"/>
+								</div>
+								<button type="submit" id="report" class="btn  btn-danger btn-sm btn-block"><i class="fas fa-fw fa-save"></i> Cari</button>
+							</div>
+						</div>
+					</form>
 					<div class="row mt-4">
 						<div class="col">
 							<!-- <span> Ini colom nder</span> -->
@@ -30,6 +41,22 @@
 				</div>
 			</main>
 		<script>
+			 $("#datepicker").datepicker({
+					format: " yyyy", // Notice the Extra space at the beginning
+					viewMode: "years", 
+					minViewMode: "years"
+			});
+			var selected =0;
+			console.log($("#datepicker").val());
+			 $("#datepicker").on("change",function(){
+			 	selected= $(this).val();
+				console.log(selected);
+				$(".year").val(selected);
+			});
+
+			// $("#report").on('click', function(){
+			// 	alert(selected)
+			// })
 			const ctx = document.getElementById('myChart').getContext('2d');
 			 var chart = new Chart(ctx, {
 				type: 'line',

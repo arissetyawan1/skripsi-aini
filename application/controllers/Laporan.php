@@ -15,9 +15,10 @@ class Laporan extends Dashboard
 	private $default = 'laporan';
 	public function index()
 	{
+		$tahun = $this->input->post('tahun', true);
 		$data['views'] = $this->default;
 		$data['name'] = 'index';
-		$data['total'] = $this->PrediksiModels->getAll();
+		$data['total'] = $this->PrediksiModels->getAll($tahun);
 		// var_dump($data['total']);
 		$this->template($data);
 
