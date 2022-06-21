@@ -5,7 +5,7 @@
 				<div class="row my-3">
 					<div class="d-flex w-50">
 						<div class="input-group">
-							<label class ="mr-3"> Tanggal </label>
+							<label class ="mr-3"> Tahun </label>
 							<input type="text" id="datepicker" />
 						</div>
 					</div>

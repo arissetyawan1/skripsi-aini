@@ -2,9 +2,9 @@
 		<div id="layoutSidenav_content" class="content-menu">
 			<main>
 				<div class="container-fluid px-4">
-					<h1 class="mt-4">
-						Laporan Page
-					</h1>
+					<h4 class="mt-4">
+						Hasil Prediksi Permintaan
+					</h4>
 					<form method="post"  action="<?= base_url('Laporan/index'); ?>">
 						<div class="row my-1">
 							<div class="d-flex w-50">
@@ -12,7 +12,7 @@
 									<label class ="mr-3"> Tahun </label>
 									<input type="text" id="datepicker" name="tahun"/>
 								</div>
-								<button type="submit" id="report" class="btn  btn-danger btn-sm btn-block"><i class="fas fa-fw fa-save"></i> Cari</button>
+								<button type="submit" id="report" class="btn btn-danger btn-sm btn-block"><i class="fas fa-fw fa-search"></i> Cari</button>
 							</div>
 						</div>
 					</form>
