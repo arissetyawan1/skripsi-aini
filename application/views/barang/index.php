@@ -16,73 +16,73 @@
 							<div class="col-7">
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Januari" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="November" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan1" placeholder="Permintaan 1" class="form-control ">
 									<?= form_error('per1','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Februari" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Desember" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan2" placeholder="Permintaan 2" class="form-control ">
 									<?= form_error('per2','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Maret" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Januari" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan3" placeholder="Permintaan 3" class="form-control">
 									<?= form_error('per3','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="April" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Februari" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan4" placeholder="Permintaan 4" class="form-control">
 									<?= form_error('per4','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Mei" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Maret" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan5" placeholder="Permintaan 5" class="form-control">
 									<?= form_error('per5','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Juni" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="April" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan6" placeholder="Permintaan 6" class="form-control">
 									<?= form_error('per6','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="July" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Mei" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan7" placeholder="Permintaan 7" class="form-control">
 									<?= form_error('per7','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Agustus" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Juni" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan8" placeholder="Permintaan 8" class="form-control">
 									<?= form_error('per8','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="September" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Juli" hidden>
 									<input type="text" name="total_permintaan[]" id="permintaan9" placeholder="Permintaan 9" class="form-control">
 									<?= form_error('per9','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Oktober" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Agustus" hidden>
 									<input type="text" name="total_permintaan[]"id="permintaan10"  placeholder="Permintaan 10" class="form-control">
 									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="November" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="September" hidden>
 									<input type="text" name="total_permintaan[]"id="permintaan11"  placeholder="Permintaan 11" class="form-control">
 									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
 								</div>
 								<div class="form-group mb-2">
 									<input type="text" name="tahun[]" class="year" placeholder="Permintaan 1" class="form-control" hidden>
-									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Desember" hidden>
+									<input type="text" name="bulan[]"  placeholder="permintaan 1" class="form-control"  value="Oktober" hidden>
 									<input type="text" name="total_permintaan[]"id="permintaan12"  placeholder="Permintaan 12" class="form-control">
 									<?= form_error('per10','<small class="text-danger">','</small>'); ?>
 								</div>
@@ -426,7 +426,7 @@
 					$("#kumulatif9").val((pk9+frek9/count_frek).toFixed(2));
 					$("#kumulatif10").val((pk10+frek10/count_frek).toFixed(2));
 					$("#kumulatif11").val((pk11+frek11/count_frek).toFixed(2));
-					$("#kumulatif12").val((pk11+frek11/count_frek).toFixed(2));
+					$("#kumulatif12").val((pk12+frek12/count_frek).toFixed(2));
 					$("#interval1").val(`0 - ${(pk1+frek1/count_frek).toFixed(2)}`);
 					$("#interval2").val(`${((pk1+frek1/count_frek) + 0.01).toFixed(2)} -  ${(pk2+frek2/count_frek).toFixed(2)}`);
 					$("#interval3").val(`${((pk2+frek2/count_frek) + 0.01).toFixed(2)} -  ${(pk3+frek3/count_frek).toFixed(2)}`);
